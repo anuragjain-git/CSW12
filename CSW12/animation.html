@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation</title>
+    <style>
+        img {
+            width: 150px;
+            height: 100px;
+            animation-name: example;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            position: relative;
+
+        }
+
+        @keyframes example {
+            0%{left:0px; top:0px;}
+            25%{left:95%; top:0;}
+            75%{left:0%; top:500px; transform: rotateY(180deg);}
+            100%{left:95%; top:500px; transform: rotateY(0deg);}
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <img src="https://thumbs.dreamstime.com/b/lord-hanuman-16319826.jpg" alt="">
+</body>
+</html>
